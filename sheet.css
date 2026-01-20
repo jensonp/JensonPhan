@@ -1,0 +1,36 @@
+body {
+    background-color: #111;
+    font-family: 'Mega Man 10', sans-serif;
+    color: #24f29c;
+    font-size: 0.75rem;
+    /* font-weight: 400; */
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.port { 
+    transition: margin-right 200ms cubic-bezier(.6, -.28, .735, .045);
+}
+
+.port:hover {
+    background-color: #24f29c;
+    color: #111;
+}
+
+.github { 
+    transition: margin-right 200ms cubic-bezier(.6, -.28, .735, .045);
+}
+.github:hover {
+    background-color: #24f29c;
+    color: #111;
+}
+
+.resume { 
+    transition: margin-right 200ms cubic-bezier(.6, -.28, .735, .045);
+}
+
+.resume:hover {
+    background-color: #24f29c;
+    color: #111;
+}

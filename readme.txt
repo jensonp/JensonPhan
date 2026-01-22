@@ -25,17 +25,22 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 HTML: 
 There is an image of an egg at the bottom of the site that links to a Youtube video. 
-There are heading elements <h1>, and <h2> to signify the title, resume, and github link. 
+There are heading elements <h1>, and <h2> to signify the title, resume, and github link.
+The "Resume" text links to a PDF of my resume. 
+The "Github" text links to my Github profile.
+There are 3 <a> elements for the 3 social media accounts in the navigation bar. 
 A short <p> element only introduces my name, school, and degree. 
-A footer exist at the bottom of the site. 
+A footer exists at the bottom of the site. 
 A flavicon of a vampire exists.
 
 
 (b) CSS features
 
-The margin, border, and padding of the text elements are modified. 
-Link are void of their blue color, and underline appearance.
-Hovering over a clickable link creates an animated color transition. 
+The elements are displayed, and positioned via flex. 
+The margin, border, and padding of the text elements have appropriate values.
+There exists @media rule for the responsiveness requirement.  
+Links are void of their blue color, and underline appearance.
+Hovering over a clickable link creates an animated color transition using cubic-bezier. 
 There is a custom google font, Sansita, as well as a fall back to sans serif. 
 
 (c) Advanced features
@@ -157,6 +162,8 @@ https://www.w3schools.com/accessibility/accessibility_skip_links.php
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/noopener 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer 
 
+There are many more links I have visited, however, I would have to dig through them all and paste them here, 
+so I just picked the most notable links in my history for brevity. 
 
 I used generative AI to aid me in 
 -modifying the main and sub classes to fix the flex component's direction, alignment, and justification
@@ -174,7 +181,6 @@ ability to skip to the main content of the page
     box-sizing: border-box;
 ```
 -fixing overflow in for class="main" in the css rule
-
 
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?

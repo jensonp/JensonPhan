@@ -14,14 +14,17 @@ EMAIL: jensonp@uci.edu
    <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
   <title>Jenson Phan Portfolio</title>
-  <meta name="viewport" content="width=device-width ,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="flavicon.jpg">
   <style>@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
 </style>
 </head>
 <body class="main">
+  <a class="skip-link" href="#main-content">Skip to Main Content</a>
+  <main id="main-content" class="sub">
   <div class="sub">
-    <nav class="nav">
+    <nav class="nav" aria-label="Social Media Links">
       <ul>
         <li class="github"><a href="https://www.instagram.com/phan.jenson/">Instagram</a></li>
         <li class="github"><a href="https://www.youtube.com/@jensonphan">Youtube</a></li>
@@ -29,11 +32,11 @@ EMAIL: jensonp@uci.edu
       </ul>
     </nav>
     <h1 class="port">Portfolio: Jenson Phan</h1>
-    <h2 class="github">Resume</h2>
+    <h2 class="github"><a href="Resume.pdf">Resume</a></h2>
     <h2 class="github">
       <a href="https://github.com/jensonp" target="_self">
-        <span class="sr-only">Github</span>
-        <span id="type"></span>
+        <span class="hidden">Github</span>
+        <span id="type" aria-hidden="true"></span>
       </a>
 
     </h2>
@@ -42,13 +45,13 @@ EMAIL: jensonp@uci.edu
     <noscript>
       <p class="desc"> Hello, my name is Jenson Phan. I am currently a senior at the University of California, Irvine pursuing a Bachelors of Science, Computer Science. My expected graduation date is 06/2026. </p>
     </noscript>
-
   </div>
+  </main>
   <video class="video" autoplay loop muted>
     <source src="rotating-red-earth.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
     <img class="rickroll" src="egg-svgrepo-com.svg" alt="Link to Rick Roll Video">
   </a>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

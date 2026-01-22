@@ -97,7 +97,7 @@ a {
 
 .desc { 
     text-transform: none; 
-    letter-spacing: normal;
+    letter-spacing: normal;;
 }
 
 ul {
@@ -123,12 +123,24 @@ video {
     display: inline; 
 }
 
+.hidden { 
+    position: absolute;
+    overflow: hidden; 
+    width: 1px;
+    height: 1px; 
+    padding: 0px; 
+    border: 0px;
+    margin: -1px;
+}
 .rickroll { 
     width: min(140px, 40vw);
     height: 5vh;
     margin-top: 3rem; 
 }
 
+.hidden { 
+    overflow: hidden; 
+}
 footer {
     font-size: 1em;
     margin-top: 3em;

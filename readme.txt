@@ -46,16 +46,95 @@ There is a video of a revolving red earth with fallbacks, but only text to show 
 
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
+I list the check or multiple checks, and then provide a one sentence reasoning below them. 
 
+1.1 Text Alternatives: Provide text alternatives for any non-text content
+It is useful to provide a description for what the image is linking is linking to. 
 
+Success Criteria 1.3.1 Info and Relationships (A)
+I don't need to identify the text direction, because I specified that the language is english in the html element. 
+
+Success Criteria 1.3.3 Sensory Characteristics (A)
+Check 271: dir attribute may be required to identify changes in text direction.
+Check 270: Unicode right-to-left marks or left-to-right marks may be required.
+Since the language english is specified in the html element, it is implied that the text direction is from left to right. 
+
+Check 248: Visual lists may not be properly marked.
+The syntax for the creation of my list is correct.
+
+Success Criteria 1.3.3 Sensory Characteristics (A)
+Check 250: Text may refer to items by shape, size, or relative position alone.
+I have no text that describes clicking in a specific direction or location. 
+
+Success Criteria 1.4.1 Use of Color (A)
+Check 14: Image may be using color alone.
+Check 251: Image may contain text with poor contrast.
+It is an image of an egg that is suppose to semantically mean an easter egg, so no text should appear.
+The image is only meant for people who are curious enough to click the image.
+
+Check 86: script may use color alone.
+The Typed.js script doesn't convey an image/message with only color. 
+
+Success Criteria 1.4.5 Images of Text (AA)
+Check 11: Image may contain text that is not in Alt text.
+The egg does not have any text. 
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+Success Criteria 2.1.1 Keyboard (A)
+Check 89: script user interface may not be accessible.
+You are still able to reach every clickable/downloadable button with the keyboard by using Tab.
+The Typed.js doesn't affect the ability for tab to do it's job to navigate around the site. 
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+Success Criteria 2.3.1 Three Flashes or Below Threshold (A)
+Check 87: script may cause screen flicker.
+Typed.js does not create any flickering effect.
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+Success Criteria 2.4.1 Bypass Blocks (A)
+Check 262: Groups of links with a related purpose are not marked.
+There is an aria label to describe that the links are social media links.
+
+Success Criteria 2.4.2 Page Titled (A)
+Check 54: title might not describe the document.
+My title "Jenson Phan Portfolio" properly describes the document. 
+
+Success Criteria 2.4.4 Link Purpose (In Context) (A)
+Check 19: Link text may not be meaningful.
+All of the links are self-intuitive, except for the egg which was an intentional design. 
+
+Success Criteria 2.4.5 Multiple Ways (AA)
+Check 184: Site missing site map.
+This is the only page of my site, so there is no need to create a site map. 
+
+Success Criteria 2.4.6 Headings and Labels (AA)
+The headings <h1> and <h2> in my document convey document structure. 
+
+3.1 Readable: Make text content readable and understandable.
+Success Criteria 3.1.2 Language Parts (AA)
+Check 110: Words or phrases that are not in the document's primary language may not be identified.
+English is the only language in this document. 
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+Success Criteria 3.2.3 Consistent Navigation (AA)
+The components do not have any impact. 
+
+Check 276: Repeated components may not appear in the same relative order each time they appear.
+The repeated components appear in the same relative order, so this passes. 
+
+Check 131: Long quotations may not be marked using the blockquote element.
+This is not an issue because I only one <p> element for my long sentence, so I don't necessarily need a blockquote element to wrap it. 
 
 4. How long, in hours, did it take you to complete this assignment?
 
-At least 20 hours.
+At least 25 hours. 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
 I used this site as inspiration: https://neo-tokyo.webflow.io/
+
+The main source of information derived from Mozilla's HTML tutorials and CSS tutorials.
+I used the W3 specifications, chapters 8-10 to learn about the box model, and formatting contexts. 
 
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content
 https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts
@@ -73,6 +152,30 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using
 https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors
 https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics
 https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735 
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+https://www.w3schools.com/accessibility/accessibility_skip_links.php 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/noopener 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer 
+
+
+I used generative AI to aid me in 
+-modifying the main and sub classes to fix the flex component's direction, alignment, and justification
+-determine where and what aria labels to place
+-creating an inline element fix to not show duplicate Github text
+-creating an css rule for the "hidden" class to aid in hiding the Github text
+-creating a css rule for the video element to comply with responsiveness
+-determining what and where to place the <a> and <main> element to create the
+ability to skip to the main content of the page
+-including a rel attribute in the <a> tag that refers to the egg image 
+-finding a generic rule to fix the box size 
+```*,
+*::before,
+*::after {
+    box-sizing: border-box;
+```
+-fixing overflow in for class="main" in the css rule
+
+
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
